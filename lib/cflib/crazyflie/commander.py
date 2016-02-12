@@ -72,5 +72,5 @@ class Commander():
 
         pk = CRTPPacket()
         pk.port = CRTPPort.COMMANDER
-        pk.data = struct.pack('<fffH', roll, -pitch, yaw, thrust)
+        pk.data = struct.pack('<BHBHHHfffH', 0, 0, 0, 0, 0, 0, roll, -pitch, yaw, thrust)
         self._cf.send_packet(pk)
