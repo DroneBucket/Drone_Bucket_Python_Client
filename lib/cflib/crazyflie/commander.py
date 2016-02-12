@@ -34,7 +34,7 @@ __author__ = 'Bitcraze AB'
 __all__ = ['Commander']
 
 from cflib.crtp.crtpstack import CRTPPacket, CRTPPort
-import struct
+import struct, numpy
 
 
 class Commander():
@@ -72,5 +72,12 @@ class Commander():
 
         pk = CRTPPacket()
         pk.port = CRTPPort.COMMANDER
-        pk.data = struct.pack('<BHBHHHfffH', 0, 0, 0, 0, 0, 0, roll, -pitch, yaw, thrust)
+        id = numpy.uint8(0);
+        numberpack = numpy.uint16(0);
+        rssi = numpy.uint8(0)
+        x = numpy.uint16(0)
+        y = numpy.uint16(0)
+        z = numpy.uint16(0)
+
+        pk.data = struct.pack('<BHBHHHfffH', id, numberpack, rssi, x, y, z, roll, -pitch, yaw, thrust)
         self._cf.send_packet(pk)
