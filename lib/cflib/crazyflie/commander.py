@@ -34,6 +34,7 @@ __author__ = 'Bitcraze AB'
 __all__ = ['Commander']
 
 from cflib.crtp.crtpstack import CRTPPacket, CRTPPort
+from random import randint
 import struct, numpy
 
 
@@ -73,7 +74,7 @@ class Commander():
         pk = CRTPPacket()
         pk.port = CRTPPort.COMMANDER
         id = numpy.uint8(0);
-        numberpack = numpy.uint16(0);
+        numberpack = numpy.uint16(randint(0,65535));
         rssi = numpy.uint8(0)
         x = numpy.uint16(0)
         y = numpy.uint16(0)
