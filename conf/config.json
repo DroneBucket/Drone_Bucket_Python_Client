@@ -1,18 +1,17 @@
 {
   "client_side_xmode": false, 
-  "link_uri": "radio://0/80/250K/E3E3E3E3E3", 
-  "input_device": "Sony PLAYSTATION(R)3 Controller", 
+  "link_uri": "radio://0/80/250K", 
+  "input_device": "Microsoft X-Box 360 pad", 
   "slew_limit": 45, 
   "max_rp": 30, 
   "ui_update_period": 100, 
   "trim_pitch": 0.0, 
   "device_config_mapping": {
-    "Sony PLAYSTATION(R)3 Controller": "PS3_Mode_3", 
-    "Microsoft X-Box 360 pad": "xbox360_mode1"
+    "Microsoft X-Box 360 pad": "xbox360_mode1_linux"
   }, 
   "slew_rate": 30, 
   "auto_reconnect": false, 
-  "max_yaw": 100, 
+  "max_yaw": 200, 
   "flightmode": "Advanced", 
   "enable_debug_driver": false, 
   "open_tabs": "Flight Control,Log TOC", 

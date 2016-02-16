@@ -63,7 +63,7 @@ class ConnectDialogue(QtGui.QWidget, connect_widget_class):
         self.interfaceList.itemDoubleClicked.connect(self.interfaceSelected)
         self.scanner.interfaceFoundSignal.connect(self.foundInterfaces)
         self.box = None
-        self.address.setValue(0xE7E7E7E7E7)
+        self.address.setValue(0xE3E3E3E3E3)
 
         self.available_interfaces = []
 
