@@ -40,14 +40,14 @@
           "scale": -1.0,
           "type": "Input.BUTTON",
           "id": 22,
-          "key": "pitchNeg",
+          "key": "pitchcal",
           "name": "pitchNeg"
         },
         {
           "scale": 1.0,
           "type": "Input.BUTTON",
           "id": 21,
-          "key": "pitchPos",
+          "key": "pitchcal",
           "name": "pitchPos"
         },
         {
@@ -61,14 +61,14 @@
           "scale": -1.0,
           "type": "Input.BUTTON",
           "id": 23,
-          "key": "rollNeg",
+          "key": "rollcal",
           "name": "rollNeg"
         },
         {
           "scale": 1.0,
           "type": "Input.BUTTON",
           "id": 24,
-          "key": "rollPos",
+          "key": "rollcal",
           "name": "rollPos"
         },
         {

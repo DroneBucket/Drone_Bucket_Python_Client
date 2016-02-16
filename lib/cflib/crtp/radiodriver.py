@@ -374,13 +374,13 @@ class _RadioDriverThread (threading.Thread):
                 self.link_quality_callback((10 - ackStatus.retry) * 10)
 
             # If no copter, retry
-            if ackStatus.ack is False:
-                self.retryBeforeDisconnect = self.retryBeforeDisconnect - 1
-                if (self.retryBeforeDisconnect == 0 and
-                        self.link_error_callback is not None):
-                    self.link_error_callback("Too many packets lost")
-                continue
-            self.retryBeforeDisconnect = self.RETRYCOUNT_BEFORE_DISCONNECT
+           # if ackStatus.ack is False:
+            #    self.retryBeforeDisconnect = self.retryBeforeDisconnect - 1
+             #   if (self.retryBeforeDisconnect == 0 and
+              #          self.link_error_callback is not None):
+               #     self.link_error_callback("Too many packets lost")
+               # continue
+           # self.retryBeforeDisconnect = self.RETRYCOUNT_BEFORE_DISCONNECT
 
             data = ackStatus.data
 

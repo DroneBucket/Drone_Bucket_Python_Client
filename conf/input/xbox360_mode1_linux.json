@@ -7,9 +7,19 @@
         {
           "scale": 1.0, 
           "type": "Input.AXIS", 
-          "id": 3, 
+          "ids": [
+            3, 
+            0
+          ], 
           "key": "yaw", 
           "name": "yaw"
+        }, 
+        {
+          "scale": 1.0, 
+          "type": "Input.BUTTON", 
+          "id": 9, 
+          "key": "rollPos", 
+          "name": "rollPos"
         }, 
         {
           "scale": 1.0, 
@@ -38,16 +48,16 @@
         {
           "scale": 1.0, 
           "type": "Input.BUTTON", 
-          "id": 5, 
+          "id": 11, 
           "key": "althold", 
           "name": "althold"
         }, 
         {
           "scale": 1.0, 
-          "type": "Input.AXIS", 
-          "id": 0, 
-          "key": "roll", 
-          "name": "roll"
+          "type": "Input.BUTTON", 
+          "id": 8, 
+          "key": "rollNeg", 
+          "name": "rollNeg"
         }
       ]
     }
