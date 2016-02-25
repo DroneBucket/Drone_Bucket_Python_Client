@@ -1,7 +1,7 @@
 {
   "client_side_xmode": false, 
   "link_uri": "radio://0/80/250K", 
-  "input_device": "Microsoft X-Box 360 pad", 
+  "input_device": "Sony PLAYSTATION(R)3 Controller", 
   "slew_limit": 45, 
   "max_rp": 30, 
   "ui_update_period": 100, 
