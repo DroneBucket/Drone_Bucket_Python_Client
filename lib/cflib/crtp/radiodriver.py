@@ -272,7 +272,7 @@ class RadioDriver(CRTPDriver):
 
         self.cradio.set_data_rate(self.cradio.DR_250KPS)
 
-        if address == None or address == 0xE3E3E3E3E3:
+        if address == None or address == 0xE7E7E7E7E7:
             found += map(lambda c: ["radio://0/{}/250K".format(c), ""],
                          self._scan_radio_channels())
             self.cradio.set_data_rate(self.cradio.DR_1MPS)

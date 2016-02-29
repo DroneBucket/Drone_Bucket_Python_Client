@@ -255,7 +255,7 @@ class Cloader:
 
         for _ in range(10):
             logging.debug("Trying to set new radio address")
-            self.link.cradio.set_address((0xE3,) * 5)
+            self.link.cradio.set_address((0xE7,) * 5)
             pkdata = (0xFF, 0xFF, 0x11) + tuple(new_address)
             self.link.cradio.send_packet(pkdata)
             self.link.cradio.set_address(tuple(new_address))
