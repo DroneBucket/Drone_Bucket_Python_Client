@@ -43,6 +43,8 @@ class Commander():
     Used for sending control setpoints to the Crazyflie
     """
 
+    PACKET_ID = 0
+
     def __init__(self, crazyflie=None):
         """
         Initialize the commander object. By default the commander is in
@@ -50,6 +52,15 @@ class Commander():
         """
         self._cf = crazyflie
         self._x_mode = False
+        self.PACKET_ID = 0
+
+    def increment_packet_id(self):
+        global PACKET_ID
+        if self.PACKET_ID < 65535:
+            self.PACKET_ID += 1
+        else:
+            self.PACKET_ID = 0
+        return self.PACKET_ID
 
     def set_client_xmode(self, enabled):
         """
@@ -74,7 +85,7 @@ class Commander():
         pk = CRTPPacket()
         pk.port = CRTPPort.COMMANDER
         id = numpy.uint8(0);
-        numberpack = numpy.uint16(randint(0,65535));
+        numberpack = numpy.uint16(self.increment_packet_id());
         rssi = numpy.uint8(0)
         x = numpy.uint16(0)
         y = numpy.uint16(0)
