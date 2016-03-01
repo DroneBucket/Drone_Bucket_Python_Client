@@ -17,7 +17,7 @@
   "open_tabs": "Flight Control,Log TOC", 
   "enable_zmq_input": false, 
   "input_device_blacklist": "(VirtualBox|VMware)", 
-  "trim_roll": 0.0, 
+  "trim_roll": 14.0, 
   "max_thrust": 80, 
   "min_thrust": 25
 }

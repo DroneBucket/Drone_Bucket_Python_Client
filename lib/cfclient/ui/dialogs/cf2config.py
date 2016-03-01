@@ -78,7 +78,7 @@ class Cf2ConfigDialog(QtGui.QWidget, service_dialog_class):
             self._radio_address.setValue(mem.elements["radio_address"])
             self._radio_address.setEnabled(True)
         else:
-            self._radio_address.setValue(int("0xE3E3E3E3E3", 0))
+            self._radio_address.setValue(int("0xE7E7E7E7E7", 0))
             self._radio_address.setEnabled(False)
         self._write_data_btn.setEnabled(True)
 

@@ -139,7 +139,7 @@ class Crazyradio:
         self.arc = -1
         if self.version >= 0.4:
             self.set_cont_carrier(False)
-            self.set_address((0xE3,) * 5)
+            self.set_address((0xE7,) * 5)
             self.set_power(self.P_0DBM)
             self.set_arc(3)
             self.set_ard_bytes(32)
